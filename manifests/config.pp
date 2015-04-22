@@ -28,5 +28,12 @@ class locales::config {
       owner  => root,
       group  => root,
       notify => Exec['generate-locales'];
+
+    '/etc/default/locale':
+      ensure => file,
+      source => 'puppet:///modules/locales/etc/default/locale',
+      mode   => '0644',
+      owner  => root,
+      group  => root;
   }
 }
