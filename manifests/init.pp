@@ -28,7 +28,7 @@
 #     class {'locales':
 #     }
 #
-class locales() {
+class locales() inherits locales::params {
 
   contain locales::config
   contain locales::service
