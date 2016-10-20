@@ -21,7 +21,7 @@
 #
 class locales::config {
   file {
-    '/var/lib/locales/supported.d/puppet':
+    $::locales::config_file:
       ensure => file,
       source => 'puppet:///modules/locales/var/lib/locales/supported.d/puppet',
       mode   => '0644',
