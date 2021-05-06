@@ -6,6 +6,9 @@ class locales::params {
         '16.04': {
           $config_file = '/etc/locale.gen'
         }
+        '18.04': {
+          $config_file = '/etc/locale.gen'
+        }        
         default: {
           $config_file = '/var/lib/locales/supported.d/local'
         }
