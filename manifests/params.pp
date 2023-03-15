@@ -8,7 +8,10 @@ class locales::params {
         }
         '18.04': {
           $config_file = '/etc/locale.gen'
-        }        
+        }
+        '20.04': {
+          $config_file = '/etc/locale.gen'
+        }
         default: {
           $config_file = '/var/lib/locales/supported.d/local'
         }
